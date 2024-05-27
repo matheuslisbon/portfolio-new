@@ -12,9 +12,9 @@ import { BsBootstrapFill } from "react-icons/bs";
 export default function Skills() {
   return (
     <main className="w-full">  
-      <div className="flex w-10/12  justify-center align-middle items-center px-4 m-auto  my-44">
+      <div className="flex md:w-10/12 w-11/12 justify-center align-middle items-center md:px-4 m-auto my-44">
       <AnimatePresence>
-        <div  className="grid grid-cols-2 justify-between items-center gap-32">
+        <div  className="grid grid-cols-2 justify-between items-center md:gap-32 gap-2">
         
         <motion.div
               className="p-0 m-0 font-bold "
@@ -22,7 +22,7 @@ export default function Skills() {
               whileInView={{ opacity: 1, }}
               transition={{ duration: 2 }} 
             >
-              <h1 className="xl:text-8xl lg:text-6xl md:text-4xl text-center text-neonBlue">
+              <h1 className="xl:text-8xl lg:text-6xl md:text-5xl text-6xl text-center text-neonBlue">
               
              Skills
               </h1>

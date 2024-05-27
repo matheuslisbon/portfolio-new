@@ -25,10 +25,10 @@ export default function Home() {
        
       <div className="grid md:grid-cols-3 grid-cols-2 md:w-10/12 w-11/12 md:gap-11 gap-2 justify-between align-middle items-center md:px-4 m-auto my-64">
         <div className="flex md:col-span-2 flex-col p-0 m-0 font-bold ">
-          <h1 className="xl:text-9xl lg:text-7xl md:text-5xl text-3xl">
+          <h1 className="xl:text-9xl lg:text-7xl md:text-5xl text-3xl  md:text-start text-center">
 
          <motion.div
-         className="p-0 m-0"
+         className="p-0 m-0 "
           initial={{ opacity: 0,x:-50}}
           whileInView={{ opacity: 1,x:0}}
           animate={{
@@ -37,10 +37,10 @@ export default function Home() {
           }}
           transition={{ duration: 1,  }} 
         >
-          <span className="text-neonBlue">Olá</span> 
+          <span className="text-neonBlue xl:text-9xl lg:text-7xl md:text-5xl text-7xl ">Olá</span> 
         </motion.div>
           <motion.div
-         className="p-0 m-0"
+         className="p-0 m-0 "
           initial={{ opacity: 0, x:50}}
           whileInView={{ opacity: 1, x:0}}
           transition={{ duration: 1 }} 
@@ -52,7 +52,7 @@ export default function Home() {
         Sou Matheus
         </motion.div>
           </h1>
-          <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-sm ">
+          <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-sm md:text-start text-center ">
 
       <motion.div
          className="p-0 m-0"
@@ -68,16 +68,7 @@ export default function Home() {
               FullStack Developer
           <Tag color="text-neonBlue">{'</>'}</Tag>
           <br />
-          <a href="/matheus.pdf"download>
-            <motion.button
-            className=" rounded bg-neonBlue md:text-lg text-sm sm:p-2 p-1"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-        Download CV
-           
-          </motion.button>
-          </a>
+      
         
           </motion.div>
     

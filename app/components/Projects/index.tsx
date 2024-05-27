@@ -27,7 +27,7 @@ export default function Projects() {
 
   return (
     <main className="w-full">  
-      <div className="flex w-10/12  justify-center align-middle items-center px-4 m-auto  my-44">
+      <div className="flex md:w-10/12 w-11/12 justify-center align-middle items-center md:px-4 m-auto  my-44">
       <AnimatePresence>
         <div  className="flex justify-center items-center gap-32">
         
@@ -40,13 +40,13 @@ export default function Projects() {
               whileInView={{ opacity: 1, }}
               transition={{ duration: 2 }} 
             >
-              <h1 className="xl:text-8xl lg:text-6xl md:text-4xl text-neonBlue mb-10 text-center">
+              <h1 className="xl:text-8xl lg:text-6xl md:text-4xl text-6xl text-neonBlue mb-10 text-center">
               
              Projetos
               </h1>
-            <div className="grid grid-cols-3 gap-12">
+            <div className="grid grid-cols-3 md:gap-12 gap-2">
                 <div>
-                    <Image src={ProjectAlura} className=" rounded-lg" alt='project alura'/>
+                    <Image src={ProjectAlura} alt='project alura'/>
             
                 </div>
                 <div>
