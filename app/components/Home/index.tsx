@@ -23,9 +23,9 @@ export default function Home() {
 
      
        
-      <div className="flex w-10/12 gap-11 justify-between align-middle items-center px-4 m-auto my-64">
-        <div className="flex flex-col p-0 m-0 font-bold ">
-          <h1 className="xl:text-9xl lg:text-7xl md:text-5xl">
+      <div className="grid md:grid-cols-3 grid-cols-2 md:w-10/12 w-11/12 md:gap-11 gap-2 justify-between align-middle items-center md:px-4 m-auto my-64">
+        <div className="flex md:col-span-2 flex-col p-0 m-0 font-bold ">
+          <h1 className="xl:text-9xl lg:text-7xl md:text-5xl text-3xl">
 
          <motion.div
          className="p-0 m-0"
@@ -52,7 +52,7 @@ export default function Home() {
         Sou Matheus
         </motion.div>
           </h1>
-          <h1 className="xl:text-6xl lg:text-5xl md:text-4xl ">
+          <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-sm ">
 
       <motion.div
          className="p-0 m-0"
@@ -70,7 +70,7 @@ export default function Home() {
           <br />
           <a href="/matheus.pdf"download>
             <motion.button
-            className=" rounded bg-neonBlue text-lg p-2"
+            className=" rounded bg-neonBlue md:text-lg text-sm sm:p-2 p-1"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -94,7 +94,7 @@ export default function Home() {
         }}
         transition={{duration:1}}
         >
-        <Image width={500} height={500} alt="profile" src={People}/>    
+        <Image className="lg:w-full lg:h-full" width={500} height={500} alt="profile" src={People}/>    
           </motion.div>
      
       </div>
