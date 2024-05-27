@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 import { useEffect } from "react";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-
+import { Analytics } from "@vercel/analytics/react"
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -38,6 +38,7 @@ export default function Page() {
   
   return (
     <main>
+      <Analytics/>
       <Parts/>
       <Header />
       <Home />
