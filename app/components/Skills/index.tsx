@@ -14,8 +14,7 @@ export default function Skills() {
     <main className="w-full">  
       <div className="flex md:w-10/12 w-11/12 justify-center align-middle items-center md:px-4 m-auto my-44">
       <AnimatePresence>
-        <div  className="grid grid-cols-2 justify-between items-center md:gap-32 gap-2">
-        
+        <div  className="md:grid md:grid-cols-2 flex flex-col justify-between items-center md:gap-32 gap-2">
         <motion.div
               className="p-0 m-0 font-bold "
               initial={{ opacity: 0, }}
@@ -46,16 +45,15 @@ export default function Skills() {
 
 
            </div>
-            </motion.div>
-              <motion.div
-                className="flex items-center justify-center"
-                initial={{ opacity: 0, }}
-                whileInView={{ opacity: 1, }}
-                transition={{ duration: 2 }} 
-              >
-                <Image width={500} height={500} alt="profile" src={People}/>   
-              </motion.div>
-      
+        </motion.div>
+        <motion.div
+          className="flex items-center justify-center"
+          initial={{ opacity: 0, }}
+          whileInView={{ opacity: 1, }}
+          transition={{ duration: 2 }} 
+        >
+          <Image width={500} height={500} alt="profile" src={People}/>   
+        </motion.div>
         </div>
         </AnimatePresence>
       </div>
